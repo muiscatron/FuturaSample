@@ -13,7 +13,7 @@ namespace WPF1
         private string _externalData;
 
         private string _userInput;
-        private bool _isUpdatePending = true;
+        private bool _isUpdatePending = false;
 
         public String ExternalData {
             get { return _externalData; }
@@ -37,6 +37,7 @@ namespace WPF1
                 _isUpdatePending = true;
                 _userInput = value;
                 NotifyOfPropertyChange(() => ExternalData);
+                NotifyOfPropertyChange(() => CanUpdate);
             }
         }
 
@@ -49,6 +50,8 @@ namespace WPF1
         public void Update()
         {
             ExternalData = UserInput;
+            _isUpdatePending = false;
+            NotifyOfPropertyChange(() => CanUpdate);
         }
 
 
