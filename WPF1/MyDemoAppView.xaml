@@ -30,10 +30,6 @@
 
         <Label Content="User Input" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2"/>
 
-        <!--
-        <TextBox x:Name="UserInput" HorizontalAlignment="Left" Height="22"  TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Grid.Column="2" Grid.Row="2" Margin="10">
-        </TextBox>
-        -->
         <controls:NumberOnlyTextbox Width="120" VerticalAlignment="Center" Grid.Column="2" Grid.Row="2" Margin="10"/>
         <Button x:Name="Update" Content="Update" HorizontalAlignment="Right" VerticalAlignment="Center" Width="75" Grid.Column="2" Grid.Row="3">
         </Button>

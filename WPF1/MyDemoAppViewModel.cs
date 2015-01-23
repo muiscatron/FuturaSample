@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Caliburn.Micro;
+﻿using Caliburn.Micro;
 
 namespace WPF1
 {
@@ -13,7 +8,7 @@ namespace WPF1
         private int _externalData;
 
         private int _userInput;
-        private bool _isUpdatePending = false;
+        private bool _isUpdatePending;
 
         public int ExternalData {
             get { return _externalData; }
@@ -46,8 +41,6 @@ namespace WPF1
         {
             get { return _isUpdatePending; }
         }
-
-
 
 
         public void Update()
