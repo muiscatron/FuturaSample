@@ -47,6 +47,9 @@ namespace WPF1
             get { return _isUpdatePending; }
         }
 
+
+
+
         public void Update()
         {
             ExternalData = UserInput;
