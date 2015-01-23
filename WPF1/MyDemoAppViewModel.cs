@@ -10,12 +10,12 @@ namespace WPF1
     class MyDemoAppViewModel : PropertyChangedBase
     {
 
-        private string _externalData;
+        private int _externalData;
 
-        private string _userInput;
+        private int _userInput;
         private bool _isUpdatePending = false;
 
-        public String ExternalData {
+        public int ExternalData {
             get { return _externalData; }
 
             set
@@ -28,7 +28,7 @@ namespace WPF1
         }
 
 
-        public String UserInput
+        public int UserInput
         {
             get { return _userInput; }
 
